@@ -21,10 +21,6 @@ Since this is a specific Userscript, you need a Userscript manager for your brow
 
 ## Screenshots
 
-| Clean Homepage | Focused Search |
-| :---: | :---: |
-| ![Homepage](images/homepage.png) | ![Search](images/search.png) |
-
-| Distraction-Free Channel |
+| Clean Homepage |
 | :---: |
-| ![Channel](images/channel.png) |
+| ![Homepage](images/homepage.png) |
