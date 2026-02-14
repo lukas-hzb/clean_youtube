@@ -1,25 +1,30 @@
 # CleanYouTube
 
-A Userscript that forces a clean, centered 640px layout on the YouTube home page, similar to the Google homepage style, and cleans up search results.
+CleanYouTube is a lightweight Userscript that transforms YouTube into a distraction-free environment. It removes the algorithmic feed, hides Shorts, cleans up the search interface, and centers the content for a focused viewing experience.
 
 ## Features
 
-- **Home Page**:
-  - Forces a strict 640px wide search bar.
-  - Centers everything.
-  - Hides the feed, sidebar, and unnecessary buttons.
-  - Mimics Google's clean aesthetic.
-
-- **Search Results**:
-  - Cleans up the interface (removes filters, sidebar, etc.).
-  - Centers the search results.
-  - Keeps the focus on the content.
+- **Minimalist Homepage**: Replaces the chaotic feed with a clean, centered search bar and logo – just like Google Search.
+- **Focused Search Results**: Displays video results without clutter, removing shorts shelves, chips, and sidebar distractions.
+- **Distraction-Free Channels**: Hides sidebars and recommendation lists on channel pages to keep the focus on the creator's content.
+- **Shorts Blocker**: Completely removes YouTube Shorts from the homepage, search results, and navigation menus.
+- **Privacy First**: No tracking, no external calls. Just pure CSS and JS modifications.
 
 ## Installation
 
-1. Install a Userscript manager like **Tampermonkey**.
-2. Install the script manually by creating a new script and pasting the content of `youtube_clean_home.user.js` or `geoguessr-meta.user.js` (renamed).
+Since this is a specific Userscript, you need a Userscript manager for your browser.
 
-## Configuration
+1. Install the **Tampermonkey** browser extension (available for Chrome, Firefox, Edge, Safari).
+2. **[Click here to install the script](https://raw.githubusercontent.com/lukas-hzb/CleanYouTube/main/clean_youtube.user.js)**.
+3. Tampermonkey will ask if you want to add the script. Confirm by clicking "Install".
+4. Open YouTube – the clean interface should appear automatically.
 
-The script works out of the box. No configuration needed.
+## Screenshots
+
+| Clean Homepage | Focused Search |
+| :---: | :---: |
+| ![Homepage](images/homepage.png) | ![Search](images/search.png) |
+
+| Distraction-Free Channel |
+| :---: |
+| ![Channel](images/channel.png) |

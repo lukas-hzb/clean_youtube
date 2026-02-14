@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         CleanYouTube
 // @namespace    http://tampermonkey.net/
-// @version      4.1
-// @description  Homepage: Width 640px, strict centering. Search Results: Clean.
+// @version      4.2
+// @description  Clean YouTube: No feed, no shorts, no sidebar. Centered search.
 // @author       Lukas Hzb
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=youtube.com
 // @match        *://www.youtube.com/*
@@ -21,7 +21,10 @@
         #voice-search-button,
         ytd-voice-search-renderer,
         ytd-notification-topbar-button-renderer,
-        #buttons {
+        ytd-masthead #buttons,
+        #guide-button,
+        #guide,
+        ytd-mini-guide-renderer {
             display: none !important;
         }
 
@@ -81,8 +84,6 @@
 
         /* Hide Feed & Sidebar completely */
         body[data-clean-mode="true"] #page-manager,
-        body[data-clean-mode="true"] #guide,
-        body[data-clean-mode="true"] ytd-mini-guide-renderer,
         body[data-clean-mode="true"] #secondary,
         body[data-clean-mode="true"] #secondary-inner {
             display: none !important;
@@ -145,17 +146,14 @@
             transform: scale(2.0) !important;
             width: 100% !important;
         }
-        /* Hide Menu Button next to Logo */
-        body[data-clean-mode="true"] #guide-button {
-            display: none !important;
-        }
+
 
         /* 2. SEARCH CONTAINER */
         body[data-clean-mode="true"] ytd-masthead #center {
             order: 2 !important;
             width: 640px !important;
             min-width: 640px !important;
-            max-width: 90vw !important;
+            max-width: 640px !important;
             display: flex !important;
             justify-content: center !important;
             align-items: center !important;
@@ -216,9 +214,6 @@
         body[data-search-mode="true"] #chips-wrapper,
         body[data-search-mode="true"] ytd-feed-filter-chip-bar-renderer,
         body[data-search-mode="true"] #header, /* Filter bar */
-        body[data-search-mode="true"] #guide,
-        body[data-search-mode="true"] #guide-button,
-        body[data-search-mode="true"] ytd-mini-guide-renderer,
         body[data-search-mode="true"] ytd-masthead #end {
             display: none !important;
         }
@@ -256,9 +251,6 @@
         /* === PART 4: CHANNEL PAGES (Channel Mode) === */
 
         /* Hide Sidebar on Channel Pages */
-        body[data-channel-mode="true"] #guide,
-        body[data-channel-mode="true"] #guide-button,
-        body[data-channel-mode="true"] ytd-mini-guide-renderer,
         body[data-channel-mode="true"] #secondary,
         body[data-channel-mode="true"] #secondary-inner {
             display: none !important;
@@ -392,6 +384,6 @@
     }, 100);
 
     // Safety Loop
-    setInterval(updateMode, 50);
+    setInterval(updateMode, 500);
 
 })();
