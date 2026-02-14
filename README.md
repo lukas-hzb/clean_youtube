@@ -1,14 +1,20 @@
 # CleanYouTube
 
-CleanYouTube is a lightweight Userscript that transforms YouTube into a distraction-free environment. It removes the algorithmic feed, hides Shorts, cleans up the search interface, and centers the content for a focused viewing experience.
+CleanYouTube is a lightweight Userscript that transforms YouTube into a distraction-free environment. It removes the algorithmic feed, cleans up the search interface, and centers the content for a focused viewing experience.
 
 ## Features
 
 - **Minimalist Homepage**: Replaces the chaotic feed with a clean, centered search bar and logo – just like Google Search.
 - **Focused Search Results**: Displays video results without clutter, removing shorts shelves, chips, and sidebar distractions.
 - **Distraction-Free Channels**: Hides sidebars and recommendation lists on channel pages to keep the focus on the creator's content.
-- **Shorts Blocker**: Completely removes YouTube Shorts from the homepage, search results, and navigation menus.
 - **Privacy First**: No tracking, no external calls. Just pure CSS and JS modifications.
+
+## Works Best With
+
+This script focuses on layout cleanup. For a complete distraction-free experience, I recommend pairing it with:
+
+- **[AdBlock for YouTube™](https://chromewebstore.google.com/detail/adblock-for-youtube/cmedhionkhpnakcndndgjdbohmhepckk?hl=en-US)** - Removes video ads.
+- **[SocialFocus — Hide Feeds](https://chromewebstore.google.com/detail/socialfocus-%E2%80%94-hide-feeds/abocjojdmemdpiffeadpdnicnlhcndcg?hl=en-US)** - Hides Shorts, recommendations, and other distractions.
 
 ## Installation
 
@@ -21,6 +27,6 @@ Since this is a specific Userscript, you need a Userscript manager for your brow
 
 ## Screenshots
 
-| Clean Homepage |
-| :---: |
+|         Clean Homepage         |
+| :----------------------------: |
 | ![Homepage](images/homepage.png) |
