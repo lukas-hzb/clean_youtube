@@ -5,16 +5,13 @@ CleanYouTube is a lightweight Userscript that transforms YouTube into a distract
 ## Features
 
 - **Minimalist Homepage**: Replaces the chaotic feed with a clean, centered search bar and logo – just like Google Search.
-- **Focused Search Results**: Displays video results without clutter, removing shorts shelves, chips, and sidebar distractions.
-- **Distraction-Free Channels**: Hides sidebars and recommendation lists on channel pages to keep the focus on the creator's content.
-- **Privacy First**: No tracking, no external calls. Just pure CSS and JS modifications.
+- **Focused Search Results and Channel Pages**: Displays video results without clutter, removing shorts shelves, chips, and sidebar distractions.
 
-## Works Best With
+## Screenshots
 
-This script focuses on layout cleanup. For a complete distraction-free experience, I recommend pairing it with:
-
-- **[AdBlock for YouTube™](https://chromewebstore.google.com/detail/adblock-for-youtube/cmedhionkhpnakcndndgjdbohmhepckk?hl=en-US)** - Removes video ads.
-- **[SocialFocus — Hide Feeds](https://chromewebstore.google.com/detail/socialfocus-%E2%80%94-hide-feeds/abocjojdmemdpiffeadpdnicnlhcndcg?hl=en-US)** - Hides Shorts, recommendations, and other distractions.
+|         Clean Homepage         |
+| :----------------------------: |
+| ![Homepage](images/homepage.png) |
 
 ## Installation
 
@@ -25,8 +22,23 @@ Since this is a specific Userscript, you need a Userscript manager for your brow
 3. Tampermonkey will ask if you want to add the script. Confirm by clicking "Install".
 4. Open YouTube – the clean interface should appear automatically.
 
-## Screenshots
+## Works Best With
 
-|         Clean Homepage         |
-| :----------------------------: |
-| ![Homepage](images/homepage.png) |
+This script focuses on layout cleanup. For a complete distraction-free experience, I recommend pairing it with:
+
+- **[AdBlock for YouTube™](https://chromewebstore.google.com/detail/adblock-for-youtube/cmedhionkhpnakcndndgjdbohmhepckk?hl=en-US)** - Removes video ads.
+- **[SocialFocus — Hide Feeds](https://chromewebstore.google.com/detail/socialfocus-%E2%80%94-hide-feeds/abocjojdmemdpiffeadpdnicnlhcndcg?hl=en-US)** - Hides Shorts, recommendations, and other distractions.
+
+## License
+
+This project is source-available software free for personal and educational use. Commercial use is strictly prohibited without a separate agreement.
+
+Persona Non Grata:
+Daniel Harzbecker is expressly and unconditionally excluded from any license or permission to use, view, or modify this software. Any access, use, or reproduction by this individual — regardless of purpose — does not constitute a license and shall be deemed a willful infringement of intellectual property rights.
+
+Third-Party Rights:
+The Licensor waives ownership claims over third-party contributions and community modifications, respecting the intellectual property of external contributors.
+
+For full legal terms, see [LICENSE](LICENSE).
+
+Copyright (c) 2026 Lukas Harzbecker.
